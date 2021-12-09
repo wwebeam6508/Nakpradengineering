@@ -1,0 +1,63 @@
+.works{
+    background-color: black;
+    width: 100%;
+    height: 94.75vh;
+    .group{
+        background-color: black;
+        display: grid;
+        @media only screen and (min-width:768px) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+        @media only screen and (max-width:768px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        grid-gap: 0.5rem;
+        width: 100%;
+        .imagezone{
+            position: relative;
+            color: #00e674;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            @media only screen and (min-width:768px) {
+                height: 450px;
+                width: 100%;
+            }
+            @media only screen and (max-width:768px) {
+                height: 200px;
+                width: 100%;
+            }
+            .image{
+                background-size: auto, auto;
+                height: 100%;
+                width: 100%;
+                background-repeat: round;
+            }
+            .image:hover + .title{
+                display: initial;
+            }
+            .image:hover{
+                cursor: pointer;
+                opacity: 0.5;
+            }
+            .title{
+                display: none;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+    .more{
+        background-color: black;
+        padding-top: 15px;
+        width: 100%;
+        text-align: center;
+        color: #00e674;
+        .icon:hover{
+            color: #14ff89;
+            cursor: pointer;
+        }
+    }
+}

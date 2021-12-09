@@ -1,0 +1,63 @@
+.project{
+    border: #00e674 1px solid;
+    color: #00e674;
+    background-color: black;
+    height: 100%;
+    .btn-default{
+        color: #00e674;
+    }
+    .tab{
+        height: 10%;
+        padding: 10px;
+    }
+    a{
+        margin-top: 25px;
+    }
+    .main{
+        height: 80%;
+        .detail{
+            height: 50%;
+            color: #00e674;
+            @media only screen and (min-width:768px){
+                margin: 50px;
+            }
+        }
+        .gallery{
+            width: 100%;
+            display: grid;
+            @media only screen and (min-width:768px) {
+                grid-template-columns: repeat(8, 1fr);
+            }
+            @media only screen and (max-width:768px) {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            grid-gap: 0.5rem;
+            background-color: black;
+            .imagezone{
+                position: relative;
+                color: #00e674;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                @media only screen and (min-width:768px) {
+                    height: 175px;
+                    width: 100%;
+                }
+                @media only screen and (max-width:768px) {
+                    height: 100px;
+                    width: 100%;
+                }
+                .image{
+                    background-size: auto, auto;
+                    height: 100%;
+                    width: 100%;
+                    background-repeat: round;
+                }
+                .image:hover{
+                    cursor: pointer;
+                    opacity: 0.5;
+                }  
+            }
+        }
+    }
+}

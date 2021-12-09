@@ -1,0 +1,35 @@
+.about{
+    .carousel{
+        height: 100%;
+        width: 100%;
+        .carousel-item{
+            height: 100%;
+            background: black;
+            @media only screen and (max-width: 768px) {
+                background-image: black;
+                .carousel-caption{
+                    color: #00e674;
+                    top: 0%;
+                    font-size: 25px;
+                }
+                
+                img{
+                    opacity: 0;
+                }
+            }
+            @media only screen and (min-width: 768px) {
+                .carousel-caption{
+                    color: #00e674;
+                    top: 40%;
+                    font-size: 30px;
+                }
+                img{
+                    opacity: 0.2;
+                }
+            }
+            img{
+                height: 94.75vh;
+            }
+        }
+    }
+}

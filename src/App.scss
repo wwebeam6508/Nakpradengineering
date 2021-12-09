@@ -36,3 +36,40 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+.main{
+  .title{
+      color: #00e674;
+  }
+  .navbar-toggler-icon{
+      background-color: #00e674;
+  }
+  .menu{
+      .nav-item{
+          .nav-link{
+              color: #00e674;
+          }
+          .nav-link:hover{
+              color: greenyellow;
+          }
+          .disabled{
+              color: rgb(56, 92, 2);
+          }
+          .active{
+              color: greenyellow;
+          }
+      }
+  }
+  background-color: black;
+}
+
+.footer{
+  z-index: 100;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
