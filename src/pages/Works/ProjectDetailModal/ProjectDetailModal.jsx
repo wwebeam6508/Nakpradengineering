@@ -80,6 +80,8 @@ function PickMapPosition(props,ref) {
     }
 
     function closeModal() {
+        setWorkDetail({})
+        setGalleryWork([])
         setIsOpen(false)
     }
     function openModal(props) {
