@@ -5,11 +5,12 @@ import withReactContent from 'sweetalert2-react-content'
 import { addFormContact } from "./ContactProvider"
 import { faAddressBook, faMailBulk, faMapMarked, faPhone } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import ReCAPTCHA from "react-google-recaptcha"
 const MySwal = withReactContent(Swal)
 export default function Contact() {
     const [emailAddress, setEmailAddress] = useState("")
     const [detail, setDetail] = useState("")
-    
+    const [isHuman , setIsHuman] = useState(false)
     return(
         <div className="contact">
             <div className="container">
@@ -44,7 +45,11 @@ export default function Contact() {
                                 <textarea value={detail} onChange={(e)=>{setDetail(e.target.value)}} className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                             </div>
                             <div className="d-grid gap-2">
-                                <button onClick={sendContactForm} type="button" className="btn btn-outline-success btn-lg">ส่ง</button>
+                                <ReCAPTCHA
+                                    sitekey="6LcLN5IdAAAAAApOshM6Gq-k91EflRe1MBNlAP8Q"
+                                    onChange={()=>{setIsHuman(!isHuman)}}
+                                />
+                                <button disabled={!isHuman} onClick={sendContactForm} type="button" className="btn btn-outline-success btn-lg">ส่ง</button>
                             </div>
                         </div>
                     </div>
