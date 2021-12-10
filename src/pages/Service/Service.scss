@@ -1,5 +1,4 @@
 .service{
-    background-color: black;
     height: 94.75vh;
     width: 100%;
     display: grid;
@@ -10,8 +9,9 @@
         grid-template-columns: repeat(1, 1fr);
     }
     .left{
+        background-color: black;
         position: relative;
-        color: #00e674;
+        color: white;
         height: 100%;
         .background{
             position: absolute;
@@ -45,8 +45,9 @@
         }
     }
     .center{
+        background-color: black;
         position: relative;
-        color: #00e674;
+        color: white;
         
         .background{
             position: absolute;
@@ -80,9 +81,10 @@
         }
     }
     .right{
+        background-color: black;
 
         position: relative;
-        color: #00e674;
+        color: white;
         
         .background{
             position: absolute;

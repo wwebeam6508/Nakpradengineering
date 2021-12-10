@@ -4,11 +4,11 @@
         width: 100%;
         .carousel-item{
             height: 100%;
-            background: black;
+            background-color: black;
             @media only screen and (max-width: 768px) {
-                background-image: black;
+                background-color: #4cace1;
                 .carousel-caption{
-                    color: #00e674;
+                    color: white;
                     top: 0%;
                     font-size: 25px;
                 }
@@ -19,7 +19,7 @@
             }
             @media only screen and (min-width: 768px) {
                 .carousel-caption{
-                    color: #00e674;
+                    color: white;
                     top: 40%;
                     font-size: 30px;
                 }

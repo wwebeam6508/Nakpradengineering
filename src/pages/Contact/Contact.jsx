@@ -20,7 +20,7 @@ export default function Contact() {
                         <p>
                             <span><FontAwesomeIcon icon={faAddressBook}/> 178/1 หมู่.1 ถนน.ซุปเปอร์ไฮเวย์ ต.ปงแสนทอง อ.เมืองลำปาง จ.ลำปาง 52100</span>
                             <br/>
-                            <a className="link-success" target="_blank" href="https://www.google.co.th/maps/place/%E0%B8%AB%E0%B8%88%E0%B8%81.%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%8D%E0%B9%8C+%E0%B9%80%E0%B8%AD%E0%B9%87%E0%B8%99%E0%B8%88%E0%B8%B4%E0%B9%80%E0%B8%99%E0%B8%B5%E0%B8%A2%E0%B8%A3%E0%B8%B4%E0%B9%88%E0%B8%87+Nakprad+engineering+ltd./@18.2739597,99.4583081,21z/data=!4m5!3m4!1s0x30d96bdeb4afb5a3:0x3999c3f3013ab7ae!8m2!3d18.2739272!4d99.4583534"><FontAwesomeIcon icon={faMapMarked}/> Google Map</a>
+                            <a className="link-light" target="_blank" href="https://www.google.co.th/maps/place/%E0%B8%AB%E0%B8%88%E0%B8%81.%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%8D%E0%B9%8C+%E0%B9%80%E0%B8%AD%E0%B9%87%E0%B8%99%E0%B8%88%E0%B8%B4%E0%B9%80%E0%B8%99%E0%B8%B5%E0%B8%A2%E0%B8%A3%E0%B8%B4%E0%B9%88%E0%B8%87+Nakprad+engineering+ltd./@18.2739597,99.4583081,21z/data=!4m5!3m4!1s0x30d96bdeb4afb5a3:0x3999c3f3013ab7ae!8m2!3d18.2739272!4d99.4583534"><FontAwesomeIcon icon={faMapMarked}/> Google Map</a>
                         </p>
                         <h4>ช่องทางติดต่อ</h4>
                         <p>
@@ -49,7 +49,7 @@ export default function Contact() {
                                     sitekey="6LcLN5IdAAAAAApOshM6Gq-k91EflRe1MBNlAP8Q"
                                     onChange={()=>{setIsHuman(!isHuman)}}
                                 />
-                                <button disabled={!isHuman} onClick={sendContactForm} type="button" className="btn btn-outline-success btn-lg">ส่ง</button>
+                                <button disabled={!isHuman} onClick={sendContactForm} type="button" className="btn btn-outline-light btn-lg">ส่ง</button>
                             </div>
                         </div>
                     </div>

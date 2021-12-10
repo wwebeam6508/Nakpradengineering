@@ -1,16 +1,28 @@
 .home{
-    background-color: black;
+    background-color: #4cace1;
     position: absolute;
     height: 100%;
     width: 100%;
     z-index: 1;
     .title{
+      display: flex;
       margin: 10px;
-      color: #00e674;
+      color: white;
+      align-items: center;
+      @media only screen and (min-width: 767px){
+        h3{
+          display: initial;
+        }
+      }
+      @media only screen and (max-width: 767px){
+        h3{
+          display: none;
+        }
+      }
     }
     @media only screen and (min-width: 768px) {
       .leftimage{
-        color: #00e674;
+        color: white;
         top: 50%;
         text-align: center;
         display: initial;
@@ -21,7 +33,7 @@
         margin-right: auto;
       }
       .rightimage{
-        color: #00e674;
+        color: white;
         top: 50%;
         text-align: center;
         right: 0;
@@ -34,7 +46,7 @@
         
       }
       .topimage{
-        color: #00e674;
+        color: white;
         margin-left: auto;
         margin-right: auto;
         top: 25%;
@@ -45,7 +57,7 @@
         
       }
       .bottomimage{
-        color: #00e674;
+        color: white;
         margin-left: auto;
         margin-right: auto;
         top: 80%;
@@ -72,7 +84,7 @@
         left: 50%;
         top: 50%;
         .menu-open-button {
-          background: black;
+          background-color: #4cace1;
           border-radius: 100%;
           width: 80px;
           height: 80px;
@@ -93,7 +105,7 @@
           .lines {
             width: 25px;
             height: 3px;
-            background: #00e674;
+            background: white;
             display: block;
             position: absolute;
             top: 50%;
@@ -216,7 +228,7 @@
           }
           
           .menu-item {
-            background: #000000;
+            background: #4cace1;
             border-radius: 100%;
             width: 80px;
             height: 80px;
@@ -252,7 +264,7 @@
           }
           
           .menu-item:hover {
-            background: #000000;
+            background: #4cace1;
             color: #3290B1;
           }
           
@@ -292,14 +304,14 @@
           }
           
           .item-1 {
-            border: 1px solid #00e674;
-            background-color: #000000;
+            border: 1px solid white;
+            background-color: #4cace1;
             box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
             text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
           }
           
           .item-1:hover {
-            color: #00e674;
+            color: white;
             text-shadow: none;
           }
 
@@ -308,62 +320,62 @@
           }
           
           .item-2 {
-            border: 1px solid #00e674;
-            background-color: #000000;
+            border: 1px solid white;
+            background-color: #4cace1;
             box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
             text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
           }
           
           .item-2:hover {
-            color: #00e674;
+            color: white;
             text-shadow: none;
           }
           
           .item-3 {
-            border: 1px solid #00e674;
-            background-color: #000000;
+            border: 1px solid white;
+            background-color: #4cace1;
             box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
             text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
           }
           
           .item-3:hover {
-            color: #00e674;
+            color: white;
             text-shadow: none;
           }
           
           .item-4 {
-            border: 1px solid #00e674;
-            background-color: #000000;
+            border: 1px solid white;
+            background-color: #4cace1;
             box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
             text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
           }
           
           .item-4:hover {
-            color: #00e674;
+            color: white;
             text-shadow: none;
           }
           
           .item-5 {
-            border: 1px solid #00e674;
-            background-color: #000000;
+            border: 1px solid white;
+            background-color: #4cace1;
             box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
             text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
           }
           
           .item-5:hover {
-            color: #00e674;
+            color: white;
             text-shadow: none;
           }
 
           .item-6 {
-            border: 1px solid #00e674;
-            background-color: #000000;
+            border: 1px solid white;
+            background-color: #4cace1;
             box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
             text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
           }
           
           .item-6:hover {
-            color: #00e674;
+            color: white;
             text-shadow: none;
           }
       }

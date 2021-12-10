@@ -1,9 +1,9 @@
 .works{
-    background-color: black;
+    background-color: #4cace1;
     width: 100%;
     height: 94.75vh;
     .group{
-        background-color: black;
+        background-color: #4cace1;
         display: grid;
         @media only screen and (min-width:768px) {
             grid-template-columns: repeat(4, 1fr);
@@ -14,8 +14,9 @@
         grid-gap: 0.5rem;
         width: 100%;
         .imagezone{
+            background-color: black;
             position: relative;
-            color: #00e674;
+            color: white;
             display: block;
             margin-left: auto;
             margin-right: auto;
@@ -50,11 +51,11 @@
         }
     }
     .more{
-        background-color: black;
+        background-color: #4cace1;
         padding-top: 15px;
         width: 100%;
         text-align: center;
-        color: #00e674;
+        color: white;
         .icon:hover{
             color: #14ff89;
             cursor: pointer;

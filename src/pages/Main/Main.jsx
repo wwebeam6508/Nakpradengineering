@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 import './Main.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome, faQuestion,  faBriefcase, faWrench, faPhone} from "@fortawesome/free-solid-svg-icons"
-
+import logo from '../../assets/image/logo.jpg'
 export default function Main() {
     const [home, setHome] = useState(false)
     const [service, setService] = useState(false)
@@ -14,7 +14,8 @@ export default function Main() {
     return(
         <div className="home">
             <div className="title">
-                <h3>หจก. นักปราชญ์ เอ็นจิเนียริ่ง</h3>
+                <img height="200px" width="300px" className="logo" src={logo}/>
+                <h3 >หจก. นักปราชญ์ เอ็นจิเนียริ่ง</h3>
             </div>
             <div className="leftimage">
                 {
