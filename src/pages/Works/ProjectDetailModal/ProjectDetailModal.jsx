@@ -1,27 +1,13 @@
-import { forwardRef, useCallback, useImperativeHandle, useState } from "react"
+import { forwardRef, useImperativeHandle, useState } from "react"
 import Modal from "react-modal"
 import './ProjectDetailModal.scss'
 import { getWorkGalleryById, getWorksDataById } from "./ProjectDetailModalProvider"
 function PickMapPosition(props,ref) {
-    let ImageViewer = props.ImageViewer
     const [workId, setWorkId] = useState("")
     const [modalIsOpen, setIsOpen] = useState(false)
     const [workDetail, setWorkDetail] = useState({})
     const [galleryWork , setGalleryWork] = useState([])
-
-
-    const [currentImage, setCurrentImage] = useState(0)
-    const [isViewerOpen, setIsViewerOpen] = useState(false)
     const [images , setImages] = useState([])
-    const openImageViewer = useCallback((index) => {
-        setCurrentImage(index);
-        setIsViewerOpen(true);
-    }, [])
-
-    const closeImageViewer = () => {
-        setCurrentImage(0);
-        setIsViewerOpen(false);
-    }
 
     useImperativeHandle(ref, ()=>(
         {
@@ -71,17 +57,12 @@ function PickMapPosition(props,ref) {
                     </div>
                 </div>
             }
-            {isViewerOpen && (
-                <ImageViewer
-                src={ images }
-                currentIndex={ currentImage }
-                disableScroll={ false }
-                closeOnClickOutside={ true }
-                onClose={ closeImageViewer }
-                />
-            )}
         </Modal>
     )
+
+    function openImageViewer(idx){
+        props.ImageViewer({idx:idx, images: images})
+    }
 
     async function afterOpenModal() {
         const workDetailData = await getWorksDataById(workId)
