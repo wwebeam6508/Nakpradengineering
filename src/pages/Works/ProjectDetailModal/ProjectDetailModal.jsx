@@ -31,7 +31,7 @@ function PickMapPosition(props,ref) {
                 <div className="project">
                     <div className="tab">
                         <div className="body">
-                            <a onClick={closeModal} style={{position:"absolute"}} className="btn btn-default">Close</a>
+                            <a onClick={closeModal} className="btn btn-default">Close</a>
                             <span style={{textAlign:'center'}}><h4>{workDetail.title}</h4></span>
                         </div>
                     </div>

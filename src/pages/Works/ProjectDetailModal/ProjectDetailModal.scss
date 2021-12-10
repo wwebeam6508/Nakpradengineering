@@ -7,13 +7,14 @@
         color: #00e674;
     }
     .tab{
-        height: 10%;
         padding: 10px;
+        position: relative;
     }
     a{
         margin-top: 25px;
     }
     .main{
+        position: relative;
         height: 80%;
         .detail{
             height: 50%;
@@ -25,6 +26,7 @@
         .gallery{
             width: 100%;
             display: grid;
+            position: relative;
             @media only screen and (min-width:768px) {
                 grid-template-columns: repeat(8, 1fr);
             }
