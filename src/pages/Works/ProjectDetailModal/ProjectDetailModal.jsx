@@ -2,8 +2,8 @@ import { forwardRef, useCallback, useImperativeHandle, useState } from "react"
 import Modal from "react-modal"
 import './ProjectDetailModal.scss'
 import { getWorkGalleryById, getWorksDataById } from "./ProjectDetailModalProvider"
-import ImageViewer from 'react-simple-image-viewer';
 function PickMapPosition(props,ref) {
+    let ImageViewer = props.ImageViewer
     const [workId, setWorkId] = useState("")
     const [modalIsOpen, setIsOpen] = useState(false)
     const [workDetail, setWorkDetail] = useState({})

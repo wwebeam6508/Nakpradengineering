@@ -19,7 +19,7 @@ function App() {
         window.scrollTo(0, 0)
     },[settabActive,location.pathname])
     return (
-        <div>
+        <div className="wholepage">
             {
                 tabActive !== '/' && 
                 <nav className="main navbar navbar-expand-lg">

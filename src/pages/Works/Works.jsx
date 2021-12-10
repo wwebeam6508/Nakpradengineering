@@ -4,6 +4,7 @@ import './Works.scss'
 import ProjectDetailModal from "./ProjectDetailModal/ProjectDetailModal"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlusCircle } from "@fortawesome/free-solid-svg-icons"
+import ImageViewer from 'react-simple-image-viewer'
 export default function Works() {
     const [isShowMore, setIsShowMore] = useState(false)
     const [limit, setLimit ] = useState(8)
@@ -14,7 +15,7 @@ export default function Works() {
     },[works])
     return(
         <div className="works">
-            <ProjectDetailModal ref={projectDetailModal} />
+            <ProjectDetailModal ImageViewer={ImageViewer} ref={projectDetailModal} />
             <div className="group">
                 {
                     works && works.map((work, idx)=>{
