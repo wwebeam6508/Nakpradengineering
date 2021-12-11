@@ -72,6 +72,12 @@ export default function Main() {
                 }
             </div>
             
+            <div className="footer mt-auto py-3">
+                <div className="container">
+                    <div id="Certificate-banners"></div>
+                </div>
+            </div>
+            
         </div>
     )
 }

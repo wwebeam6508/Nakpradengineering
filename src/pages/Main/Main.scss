@@ -1,4 +1,13 @@
 .home{
+  
+  .footer{
+    z-index: 100;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+  }
     background-color: #4cace1;
     position: absolute;
     height: 100%;
