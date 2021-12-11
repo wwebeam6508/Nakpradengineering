@@ -57,11 +57,11 @@ function App() {
                 <Route path="service" element={<Service />} />
                 <Route path="contact" element={<Contact />} />
             </Routes>
-            {/* <div class="footer mt-auto py-3">
-                <div class="container">
-                    <span class="text-muted">Place sticky footer content here.</span>
+            <div className="footer mt-auto py-3">
+                <div className="container">
+                    <div id="Certificate-banners"></div>
                 </div>
-            </div> */}
+            </div>
         </div>
         
     )
